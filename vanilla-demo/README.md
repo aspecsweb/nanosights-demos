@@ -1,32 +1,41 @@
-# NanoSights + Vanilla JS
+# NanoSights + Vanilla JS & HTML
 
-This simple example integrates [NanoSights](https://www.nanosights.dev) using plain HTML, CSS, and JavaScript — no framework needed.
+This example shows how to use [NanoSights](https://www.nanosights.dev) in a plain HTML and JavaScript site.
 
-- 🔗 **Live Demo:** www.vanilla.nanosights.dev  
-- 🎥 **YouTube Walkthrough:**  
+- 🔗 **Live Demo:** www.html.nanosights.dev
+- 🎥 **YouTube Walkthrough:** [Watch](https://www.youtube.com/watch?v=todo)
 - 📚 **Docs Page:** [Docs](https://www.nanosights.dev/docs)
 
 ---
 
+## 📄 Quick Start
+
+Use a local dev Server like [Live Server](https://github.com/ritwickdey/vscode-live-server-plus-plus) to start the project.
 
 ## 📦 Usage in your own project
 
 ### NanoAnalytics
 
-Works out of the box.
+Works out of the box with [CDN](https://www.nanosights.dev/docs/tags/analytics/cdn).
 
-#### Place the script inside your pages
+#### Link to a CDN in your `index.html`
 
 ```html
-<script src="https://www.nanosights.dev/api/tags/analytics/script?projectKey=PROJECT_KEY&userId=USER_ID"></script>
+<script type="module">
+  import nanoAnalytics from "https://cdn.jsdelivr.net/npm/nano-analytics@1.0.0 +esm";
+</script>
 ```
 
-### NanoInsights
-
-Works out of the box.
-
-#### Place the script inside your pages
+#### Import in your `index.html`
 
 ```html
-<script src="https://www.nanosights.dev/api/tags/insights/script?projectKey=PROJECT_KEY&userId=USER_ID"></script>
+<script>
+  import "nano-analytics";
+</script>
+```
+
+#### Embed the element in your `index.html`
+
+```html
+<nano-analytics projectKey="YOUR_PROJECT_KEY" userId="USER_ID" />
 ```
