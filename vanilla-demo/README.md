@@ -26,14 +26,6 @@ Works out of the box with [CDN](https://www.nanosights.dev/docs/tags/analytics/c
 </script>
 ```
 
-#### Import in your `index.html`
-
-```html
-<script>
-  import "nano-analytics";
-</script>
-```
-
 #### Embed the element in your `index.html`
 
 ```html
