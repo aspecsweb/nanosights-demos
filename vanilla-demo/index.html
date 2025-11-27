@@ -18,6 +18,7 @@
     <p>This demo shows how NanoSights integrates with Vanilla JavaScript.</p>
     <div class="buttons">
       <a
+        onclick="track('CTA')"
         class="button primary"
         href="https://www.nanosights.dev"
         target="_blank"
@@ -32,8 +33,22 @@
       projectKey="mcw2ugsj162ft"
       userId="a5fb0950-8486-43a2-8ee5-dc4f551a4003"
     />
+    <nano-insights
+      projectKey="mcw2ugsj162ft"
+      userId="a5fb0950-8486-43a2-8ee5-dc4f551a4003"
+    />
+    <nano-custom
+      projectKey="mcw2ugsj162ft"
+      userId="a5fb0950-8486-43a2-8ee5-dc4f551a4003"
+    />
   </body>
   <script type="module">
     import nanoAnalytics from "https://cdn.jsdelivr.net/npm/nano-analytics@1.0.0/+esm";
+  </script>
+  <script type="module">
+    import nanoCustom from "https://cdn.jsdelivr.net/npm/nano-custom@1.0.0/+esm";
+  </script>
+  <script type="module">
+    import nanoInsights from "https://cdn.jsdelivr.net/npm/nano-insights@1.0.0/+esm";
   </script>
 </html>
