@@ -40,7 +40,6 @@ npm install nano-analytics
 ```html
 <nano-analytics
   projectKey="YOUR_PROJECT_KEY"
-  userId="USER_ID"
 />
 ```
 
@@ -67,7 +66,6 @@ npm install nano-insights
 ```html
 <nano-insights
   projectKey="YOUR_PROJECT_KEY"
-  userId="USER_ID"
 />
 ```
 
@@ -94,7 +92,6 @@ npm install nano-custom
 ```html
 <nano-custom
   projectKey="YOUR_PROJECT_KEY"
-  userId="USER_ID"
 />
 ```
 

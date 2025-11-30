@@ -29,5 +29,7 @@ Works out of the box with [CDN](https://www.nanosights.dev/docs/tags/analytics/c
 #### Embed the element in your `index.html`
 
 ```html
-<nano-analytics projectKey="YOUR_PROJECT_KEY" userId="USER_ID" />
+<nano-analytics
+  projectKey="YOUR_PROJECT_KEY"
+/>
 ```
