@@ -23,6 +23,6 @@ The following table shows the status of each Nanosights tag implementation acros
 | Astro         | ☑️ Implemented    | ☑️ Implemented    | ☑️ Implemented  |
 | Angular       | ☑️ Implemented    | ☑️ Implemented    | ☑️ Implemented  |
 | Svelte        | ☑️ Implemented    | ☑️ Implemented    | ☑️ Implemented  |
-| Vue           | ☑️ Implemented    | ☑️ Implemented    | ⬜ Not yet      |
-| Vanilla JS    | ☑️ Implemented    | ⬜ Not yet        | ⬜ Not yet      |
+| Vue           | ☑️ Implemented    | ☑️ Implemented    | ☑️ Implemented  |
+| Vanilla JS    | ☑️ Implemented    | ☑️ Implemented    | ☑️ Implemented  |
 | Webpack       | ☑️ Implemented    | ☑️ Implemented    | ☑️ Implemented  |

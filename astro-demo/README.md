@@ -21,19 +21,23 @@ npm run dev
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-analytics
 ```
 
-#### Import in your `src/layouts/Lauyout.astro`
+#### Import the module
+
+_in `src/layouts/Lauyout.astro`_
 
 ```ts
 import "nano-analytics"
 ```
 
-#### Embed the element in your `src/layouts/Lauyout.astro`
+#### Embed the element
+
+_in `src/layouts/Lauyout.astro`_
 
 ```html
 <nano-analytics
@@ -45,19 +49,23 @@ import "nano-analytics"
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-insights
 ```
 
-#### Import in your `src/layouts/Lauyout.astro`
+#### Import the module
+
+_in `src/layouts/Lauyout.astro`_
 
 ```ts
 import "nano-insights"
 ```
 
-#### Embed the element in your `src/layouts/Lauyout.astro`
+#### Embed the element
+
+_in `src/layouts/Lauyout.astro`_
 
 ```html
 <nano-insights
@@ -69,19 +77,23 @@ import "nano-insights"
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-custom
 ```
 
-#### Import in your `src/layouts/Lauyout.astro`
+#### Import the module
+
+_in `src/layouts/Lauyout.astro`_
 
 ```ts
 import "nano-custom"
 ```
 
-#### Embed the element in your `src/layouts/Lauyout.astro`
+#### Embed the element
+
+_in `src/layouts/Lauyout.astro`_
 
 ```html
 <nano-custom
@@ -89,8 +101,12 @@ import "nano-custom"
 />
 ```
 
-#### Use the track function in `*.astro`
+#### Use the track function
+
+_in `*.astro` components_
 
 ```html
-<button onclick="track('Tracks')">Track</button>
+<button onclick="track('Tracks')">
+  Track
+</button>
 ```

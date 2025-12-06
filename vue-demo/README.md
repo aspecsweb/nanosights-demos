@@ -21,19 +21,23 @@ npm run dev
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-analytics
 ```
 
-#### Import in your `src/main.ts`
+#### Import the module
+
+_in `src/main.ts`_
 
 ```ts
 import "nano-analytics"
 ```
 
-#### Embed the element in your `src/App.vue`
+#### Embed the element
+
+_in `src/App.vue`_
 
 ```html
 <nano-analytics
@@ -45,22 +49,68 @@ import "nano-analytics"
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-insights
 ```
 
-#### Import in your `src/main.ts`
+#### Import the module
+
+_in `src/main.ts`_
 
 ```ts
 import "nano-insights"
 ```
 
-#### Embed the element in your `src/App.vue`
+#### Embed the element
+
+_in `src/App.vue`_
 
 ```html
 <nano-insights
   projectKey="YOUR_PROJECT_KEY"
 />
+```
+
+### NanoCustom
+
+Requires an extra step because Vue’s `<script setup>` runs in module scope, so the global track function isn’t available automatically and must be imported explicitly.
+
+#### Install the package
+
+```bash
+npm install nano-custom
+```
+
+#### Import the module
+
+_in `src/main.ts`_
+
+```ts
+import 'nano-custom';
+```
+
+#### Embed the element
+
+_in `src/App.vue`_
+
+```html
+<nano-custom
+  projectKey="YOUR_PROJECT_KEY"
+/>
+```
+
+#### Use the track function
+
+_in `*.vue` components_
+
+```html
+<script setup lang="ts">
+import { track } from 'nano-custom'
+</script>
+
+<button @click="track('CTA')">
+  Track CTA
+</button>
 ```

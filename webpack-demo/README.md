@@ -21,19 +21,23 @@ npm start
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-analytics
 ```
 
-#### Import in your `index.ts`
+#### Import the module
+
+_in `index.ts`_
 
 ```ts
 import "nano-analytics"
 ```
 
-#### Embed the element in your `src/index.html`
+#### Embed the element
+
+_in `src/index.html`_
 
 ```html
 <nano-analytics
@@ -45,19 +49,23 @@ import "nano-analytics"
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-insights
 ```
 
-#### Import in your `src/index.ts`
+#### Import the module
+
+_in `src/index._ts`
 
 ```ts
 import "nano-insights"
 ```
 
-#### Embed the element in your `index.html`
+#### Embed the element
+
+_in `index.html`_
 
 ```html
 <nano-insights
@@ -69,19 +77,23 @@ import "nano-insights"
 
 Requires additional steps for TypeScript to recognize the module and locate the `track` function.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-custom
 ```
 
-#### Import in your `index.ts`
+#### Import the module
+
+_in `index.ts`_
 
 ```ts
 import "nano-custom"
 ```
 
-#### Embed the element in your `index.html`
+#### Embed the element
+
+_in `index.html`_
 
 ```html
 <nano-custom
@@ -89,30 +101,20 @@ import "nano-custom"
 />
 ```
 
-#### Use the track function in `*.html`
+#### Assign the track function to the global window object
 
-```html
-<button onclick="track('Tracks')">Track</button>
-```
-
-#### Assign the track function to the global window object in `index.ts`
+_in `index.ts`_
 
 ```ts
 (window as any).track = track;
 ```
 
-#### Configure `tsconfig.json`
+#### Use the track function
 
-Add the following inside your `tsconfig.json`
+_in `*.html` files_
 
-```json
-{
-  "compilerOptions": {
-    // ...
-    "moduleResolution": "nodenext",
-    "paths": {
-      "nano-custom": ["node_modules/nano-custom"]
-    }
-  }
-}
+```html
+<button onclick="track('CTA')">
+  Track
+</button>
 ```

@@ -35,19 +35,23 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-analytics
 ```
 
-#### Import in your `src/app/app.component.ts`
+#### Import the module
+
+_in `src/app/app.component.ts`_
 
 ```ts
 import "nano-analytics"
 ```
 
-#### Embed the element in your `src/app/app.component.html`
+#### Embed the element
+
+_in `src/app/app.component.html`_
 
 ```html
 <nano-analytics
@@ -59,19 +63,23 @@ import "nano-analytics"
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-insights
 ```
 
-#### Import in your `src/app/app.component.ts`
+#### Import the module
+
+_in `src/app/app.component.ts`_
 
 ```ts
 import "nano-insights"
 ```
 
-#### Embed the element in your `src/app/app.component.html`
+#### Embed the element
+
+_in `src/app/app.component.html`_
 
 ```html
 <nano-insights
@@ -83,13 +91,15 @@ import "nano-insights"
 
 Requires an extra step to make the `track` function available in the `component`.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-custom
 ```
 
-#### Import in your `src/app/app.component.ts`
+#### Import the module
+
+_in `src/app/app.component.ts`_
 
 ```ts
 import "nano-custom"
@@ -102,7 +112,9 @@ export class Component {
 }
 ```
 
-#### Embed the element in your `src/app/app.component.html`
+#### Embed the element
+
+_in `src/app/app.component.html`_
 
 ```html
 <nano-custom
@@ -110,8 +122,12 @@ export class Component {
 />
 ```
 
-#### Use the track function in `src/app/app.component.html`
+#### Use the track function
+
+_in `src/app/app.component.html` components_
 
 ```html
-<button (click)="track('Tracks')">Track</button>
+<button (click)="track('Tracks')">
+  Track
+</button>
 ```

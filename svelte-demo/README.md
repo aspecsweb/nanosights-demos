@@ -21,13 +21,15 @@ npm run dev
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-analytics
 ```
 
-#### Import in your `src/routes/+layout.svelte`
+#### Import the module
+
+_in `src/routes/+layout.svelte`_
 
 ```html
 <script lang="ts">
@@ -35,7 +37,9 @@ npm install nano-analytics
 </script>
 ```
 
-#### Embed the element in your `src/routes/+layout.svelte`
+#### Embed the element
+
+_in `src/routes/+layout.svelte`_
 
 ```html
 <nano-analytics
@@ -47,13 +51,15 @@ npm install nano-analytics
 
 Works out of the box.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-insights
 ```
 
-#### Import in your `src/routes/+layout.svelte`
+#### Import the module
+
+_in `src/routes/+layout.svelte`_
 
 ```html
 <script lang="ts">
@@ -61,7 +67,9 @@ npm install nano-insights
 </script>
 ```
 
-#### Embed the element in your `src/routes/+layout.svelte`
+#### Embed the element
+
+_in `src/routes/+layout.svelte`_
 
 ```html
 <nano-insights
@@ -71,15 +79,17 @@ npm install nano-insights
 
 ### NanoCustom
 
-Works out of the box.
+Requires an extra step because Svelte’s module-scoped `<script>` doesn’t expose global functions like track automatically.
 
-#### Install package
+#### Install the package
 
 ```bash
 npm install nano-custom
 ```
 
-#### Import in your `src/routes/+layout.svelt`
+#### Import the module
+
+_in `src/routes/+layout.svelt`_
 
 ```html
 <script lang="ts">
@@ -87,7 +97,9 @@ npm install nano-custom
 </script>
 ```
 
-#### Embed the element in your `src/routes/+layout.svelt`
+#### Embed the element
+
+_in `src/routes/+layout.svelt`_
 
 ```html
 <nano-custom
@@ -95,7 +107,9 @@ npm install nano-custom
 />
 ```
 
-#### Use the track function in `*.svelte` components
+#### Use the track function
+
+_in `*.svelte` components_
 
 ```html
 <script lang="ts">
@@ -106,5 +120,7 @@ npm install nano-custom
   };
 </script>
 
-<button on:click={sendEvent}>Track CTA</button>
+<button on:click={sendEvent}>
+  Track CTA
+</button>
 ```
