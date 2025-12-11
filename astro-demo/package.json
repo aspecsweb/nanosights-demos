@@ -9,9 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.10.1",
-    "nano-analytics": "^0.10.0",
-    "nano-custom": "^0.3.0",
-    "nano-insights": "^0.5.0"
+    "astro": "^5.16.5",
+    "nano-analytics": "^1.1.0",
+    "nano-custom": "^1.1.0",
+    "nano-insights": "^1.1.0"
   }
 }
